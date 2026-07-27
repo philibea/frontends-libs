@@ -1,0 +1,52 @@
+# dependencies
+node_modules
+
+# we are using pnpm here
+package-lock.json
+yarn.lock
+
+# misc
+.DS_Store
+.env
+/.vscode
+.idea/
+.eslintcache
+dist
+coverage
+.reports
+
+# turbo
+.turbo
+!.turbo/config.json
+examples/*/.turbo
+packages/*/.turbo
+tools/*/.turbo
+
+
+# VSCode extension "Local History"
+.history
+
+# Npm/Yarn debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# turbo
+packages/*/.turbo
+packages/*/dist
+
+#vite
+vite.config.ts.*
+vitest.config.ts.*
+
+# Yalc
+yalc.lock
+.yalc/
+
+# IDE
+.zed
+
+# ai
+.ai
+AGENTS.md
