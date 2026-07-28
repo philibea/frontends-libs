@@ -1,0 +1,24 @@
+{
+  "name": "@phiphi/tsconfig",
+  "version": "0.0.1",
+  "description": "Phiphi shared tsconfig",
+  "keywords": [
+    "shared typescript config",
+    "tsconfig",
+    "typescript"
+  ],
+  "homepage": "https://github.com//philibea/frontends-libs/tree/main/packages/tsconfig",
+  "bugs": {
+    "url": "https://github.com//philibea/frontends-libs/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com//philibea/frontends-libs.git",
+    "directory": "packages/tsconfig"
+  },
+  "main": "tsconfig.json",
+  "publishConfig": {
+    "access": "public"
+  }
+}

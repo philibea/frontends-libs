@@ -1,0 +1,45 @@
+{
+  "name": "@phiphi/oxfmt-config",
+  "version": "0.0.1",
+  "description": "Shareable configuration for oxfmt",
+  "keywords": [
+    "config",
+    "fmt",
+    "oxfmt",
+    "oxfmt-config"
+  ],
+  "homepage": "https://github.com/philibea/frontends-libs/tree/main/packages/oxfmt-config",
+  "bugs": {
+    "url": "https://github.com/philibea/frontends-libs/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philibea/frontends-libs.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsdown",
+    "build:profile": "npx vite-bundle-visualizer -c vite.config.ts"
+  },
+  "dependencies": {
+    "deepmerge-ts": "catalog:"
+  },
+  "devDependencies": {
+    "oxfmt": "catalog:"
+  },
+  "peerDependencies": {
+    "oxfmt": ">=0.45.0"
+  }
+}

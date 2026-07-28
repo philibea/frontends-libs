@@ -1,0 +1,39 @@
+{
+  "name": "@phiphi/oxlint-config",
+  "version": "0.0.1",
+  "description": "Phiphi's shareable configuration for oxlint",
+  "keywords": [
+    "config",
+    "lint",
+    "oxlint",
+    "oxlint-config",
+    "phiphi"
+  ],
+  "homepage": "https://github.com/philibea/frontends-libs/tree/main/packages/oxlint-config",
+  "bugs": {
+    "url": "https://github.com/philibea/frontends-libs/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philibea/frontends-libs.git",
+    "directory": "packages/oxlint-config"
+  },
+  "files": [
+    "configs/**"
+  ],
+  "exports": {
+    ".": "./configs/index.json",
+    "./react": "./configs/react.json",
+    "./vitest": "./configs/vitest.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "oxlint": "catalog:"
+  },
+  "peerDependencies": {
+    "oxlint": ">=1.55.0"
+  }
+}

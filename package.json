@@ -1,0 +1,72 @@
+{
+  "scripts": {
+    "preinstall": "git config --local include.path $PWD/.gitconfig",
+    "lint": "oxlint -c .oxlintrc.jsonc",
+    "lint:fix": "pnpm lint:fix -- --fix",
+    "build": "pnpm turbo build",
+    "typecheck": "pnpm turbo typecheck",
+    "typecheck:generate": "pnpm turbo typecheck:generate",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "test:unit": "pnpm turbo test:unit",
+    "test:unit:coverage": "pnpm turbo test:unit:coverage",
+    "test:types": "pnpm turbo test:types",
+    "release": "pnpm changeset publish"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "catalog:",
+    "@changesets/cli": "catalog:",
+    "@phiphi/oxfmt-config": "workspace:*",
+    "@phiphi/tsconfig": "workspace:*",
+    "nano-staged": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "publint": "catalog:",
+    "tsdown": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  },
+  "nano-staged": {
+    "*.ts?(x)": [
+      "pnpm run format",
+      "pnpm run lint --quiet"
+    ],
+    "*.y?(a)ml": [
+      "oxfmt --write ."
+    ],
+    "*.json?(c)": [
+      "oxfmt --write ."
+    ],
+    "*.mdx": [
+      "oxfmt --write ."
+    ],
+    "(*package).json": [
+      "pnpm exec manypkg check"
+    ],
+    "(*pnpm)-lock": [
+      "pnpm exec manypkg check"
+    ]
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.17.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.18.x || 26.x",
+      "onFail": "error"
+    }
+  },
+  "engines": {
+    "node": "24.x || 25.x || 26.x",
+    "pnpm": ">=11.x"
+  },
+  "manypkg": {
+    "ignoredRules": [
+      "INTERNAL_MISMATCH"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+[hook "pre-commit nano-staged"]
+  event = pre-commit
+  command = pnpm nano-staged
+
+[hook "pre-push nano-staged"]
+  event = pre-push
+  command = pnpm nano-staged

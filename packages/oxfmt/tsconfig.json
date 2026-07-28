@@ -1,0 +1,4 @@
+{
+  "extends": "@phiphi/tsconfig",
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
