@@ -1,9 +1,9 @@
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-  dts: true,
-  target: 'baseline-widely-available',
+  exports: true,
+  dts: false,
   platform: 'node',
+  target: ['node24'],
   entry: 'src/cli.ts',
-  unbundle: true,
 })
