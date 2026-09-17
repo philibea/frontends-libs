@@ -13,6 +13,7 @@
     "url": "https://github.com/philibea/frontends-libs/issues"
   },
   "license": "MIT",
+  "author": "Alexandre Philibeaux <aphilibeaux@scaleway.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/philibea/frontends-libs.git",

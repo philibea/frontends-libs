@@ -1,0 +1,28 @@
+{
+  "name": "@scaleway-internal/pnpm-auto-release",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bump and publish changed packages via pnpm",
+  "author": "Alexandre Philibeaux <aphilibeaux@scaleway.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philibea/frontends-libs.git",
+    "directory": "packages/pnpm-auto-release"
+  },
+  "bin": {
+    "pnpm-auto-release": "./src/cli.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@phiphi/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "tsdown": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.23.1"
+  }
+}

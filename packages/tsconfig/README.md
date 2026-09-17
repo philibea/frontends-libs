@@ -1,4 +1,4 @@
-# `@scaleway/tsconfig`
+# `@phiphi/tsconfig`
 
 ## Install
 
