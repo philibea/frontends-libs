@@ -16,6 +16,7 @@
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:",
     "@changesets/cli": "catalog:",
+    "@phiphi/npm-trust": "workspace:*",
     "@phiphi/oxfmt-config": "workspace:*",
     "@phiphi/tsconfig": "workspace:*",
     "nano-staged": "catalog:",
@@ -49,11 +50,18 @@
     ]
   },
   "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.17.0",
-      "onFail": "download"
-    },
+    "packageManager": [
+      {
+        "name": "pnpm",
+        "version": "12.4.1",
+        "onFail": "download"
+      },
+      {
+        "name": "npm",
+        "version": "11.17.0",
+        "onFail": "download"
+      }
+    ],
     "runtime": {
       "name": "node",
       "version": "24.18.x || 26.x",
@@ -64,6 +72,7 @@
     "node": "24.x || 25.x || 26.x",
     "pnpm": ">=11.x"
   },
+  "packageManager": "pnpm@12.4.1",
   "manypkg": {
     "ignoredRules": [
       "INTERNAL_MISMATCH"

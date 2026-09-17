@@ -1,0 +1,15 @@
+{
+  "extends": "@phiphi/tsconfig",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "listEmittedFiles": true,
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts"],
+  "typeAcquisition": {
+    "disableFilenameBasedTypeAcquisition": true,
+    "enable": false
+  }
+}

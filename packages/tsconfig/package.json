@@ -7,11 +7,12 @@
     "tsconfig",
     "typescript"
   ],
-  "homepage": "https://github.com//philibea/frontends-libs/tree/main/packages/tsconfig",
+  "homepage": "https://github.com/philibea/frontends-libs/tree/main/packages/tsconfig",
   "bugs": {
-    "url": "https://github.com//philibea/frontends-libs/issues"
+    "url": "https://github.com/philibea/frontends-libs/issues"
   },
   "license": "MIT",
+  "author": "Alexandre Philibeaux <alexandre@philibeaux.fr>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com//philibea/frontends-libs.git",

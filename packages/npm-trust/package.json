@@ -1,0 +1,37 @@
+{
+  "name": "@phiphi/npm-trust",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Configure npm trusted publishers (GitHub Actions) for workspace packages",
+  "author": "Alexandre Philibeaux <alexandre@philibeaux.fr>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philibea/frontends-libs.git",
+    "directory": "packages/npm-trust"
+  },
+  "bin": {
+    "npm-trust": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/cli.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@phiphi/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "tsdown": "catalog:"
+  },
+  "engines": {
+    "node": ">=24.x",
+    "npm": ">=11.x",
+    "pnpm": ">=12.x"
+  }
+}
