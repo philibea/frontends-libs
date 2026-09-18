@@ -1,6 +1,6 @@
 {
   "name": "@phiphi/tsconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Phiphi shared tsconfig",
   "keywords": [
     "shared typescript config",
