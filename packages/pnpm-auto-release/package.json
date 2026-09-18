@@ -1,6 +1,6 @@
 {
   "name": "@phiphi/pnpm-auto-release",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Bump and publish changed packages via pnpm",
   "author": "Alexandre Philibeaux <alexandre@philibeaux.fr>",

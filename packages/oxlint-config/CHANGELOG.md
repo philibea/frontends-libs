@@ -1,4 +1,4 @@
-# Change Log
+# @phiphi/oxlint-config
 
 ## 0.0.2
 
